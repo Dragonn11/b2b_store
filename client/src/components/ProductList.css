@@ -1,0 +1,106 @@
+
+.product-list li {
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #dc3545;
+  color: white;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: auto; /* Add horizontal scrolling if necessary */
+}
+
+.product-card {
+  flex: 0 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px; /* Set a fixed width for each card */
+}
+
+.product-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.product-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.product-card a:hover {
+  text-decoration: underline;
+}
+
+.search-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.search-by-id, .search-by-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-by-id input, .search-by-name input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.search-by-id button, .search-by-name button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.search-by-id button:hover, .search-by-name button:hover {
+  background-color: #0056b3;
+}
+
+.add-product-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.add-product-button:hover {
+  background-color: #218838;
+}
