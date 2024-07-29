@@ -46,7 +46,7 @@ const ProductList = () => {
   const handleSearchByName = async () => {
     if (searchName) {
       try {
-        const response = await axios.get(`${API_URL}/api/products?name=${searchName}`, {
+        const response = await axios.get(`${API_URL}/api/products/filter?name=${searchName}`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
